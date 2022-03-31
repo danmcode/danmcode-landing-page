@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -24,51 +27,34 @@
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">
-                <img src="./assets/img/damncode-logo.svg" 
-                alt="danmcode"
-                class="nav-img"
-                >
+                <img src="./assets/img/damncode-logo.png" alt="danmcode" class="nav-img">
             </a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+            <button class="navbar-toggler text-uppercase text-white rounded" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
-                Menu
+                Menú
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" 
-                            href="#works">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#works">
                             Trabajos
                         </a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">
                             Portafolio
                         </a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#habilites">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#habilites">
                             Habilidades
                         </a>
                     </li>
+
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#contact">Contact
-                        </a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="">Blog
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="">Blog
                         </a>
                     </li>
                 </ul>
@@ -77,10 +63,31 @@
     </nav>
 
     <!-- danmcode header-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
+    <header class="masthead bg-primary text-white">
+        <!-- Imagen e informacion -->
+        <div class="about-container">
+            <!-- Image and text -->
+            <div class="about-content">
+                
+                <div class="danmcode-image">
+                    <img src="./assets/img/danmcode-da-1.jpg">
+                </div>
 
+                <p>
+                    <span>Daniel Alexander Muelas Rivera</span><br>
+                    <span>Ingeniero Informático</span><br>
+                    <span>Desarrollador Backend & Móvil</span>
+                </p>
+            </div>
+
+            <!-- Presentation -->
+            <div class="about-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ratione natus sit doloremque neque
+                illum quidem, dignissimos corporis, laudantium maxime beatae molestias veniam dolores laboriosam
+                officia, accusantium sint. Quod, error!
+            </div>
         </div>
+
     </header>
 
     <!-- Works danmcode-->
@@ -93,12 +100,12 @@
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-laptop-code"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
         </div>
     </section>
-    
+
     <!-- Portafolio Section-->
     <section class="page-section bg-primary text-white mb-0" id="portfolio">
         <div class="container">
@@ -109,7 +116,7 @@
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-book"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Portafolio Section Content-->
@@ -119,94 +126,48 @@
     </section>
 
     <!-- Languages danmcode-->
-        <section class="page-section habilites" id="habilites">
-            <div class="container">
-                <!-- Works Me Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-                    Habilidades
-                </h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-    
-                </div>
-            </div>
-    </section>
-
-    <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <section class="page-section habilites" id="habilites">
         <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
-                        includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
-                        stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the
-                        dividers, and add your email address to the contact form to make it fully functional!</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- Contact Section-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Works Me Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+                Habilidades
+            </h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-brain"></i></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Contact Section Form-->
+            <!-- Portfolio Grid Items-->
             <div class="row justify-content-center">
-               
+
             </div>
         </div>
     </section>
+
+
     <!-- Footer-->
     <footer class="footer text-center">
         <div class="container">
-                <!-- Footer Social Icons-->
-                <div class="col-lg-12 mb-12 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Redes sociales</h4>
-                    
-                    <!-- Instragram -->
-                    <a class="btn btn-outline-light btn-social mx-1" 
-                        href="#!">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <!-- Twitter -->
-                    <a class="btn btn-outline-light btn-social mx-1" 
-                        href="#!">
-                        <i class="fab fa-fw fa-twitter"></i>
-                    </a>
-                    <!-- Linkedin -->
-                    <a class="btn btn-outline-light btn-social mx-1" 
-                        href="#!">
-                        <i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <!-- Youtube -->
-                    <a class="btn btn-outline-light btn-social mx-1" 
-                        href="#!">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-12 mb-12 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Redes sociales</h4>
+
+                <!-- Instragram -->
+                <a class="btn btn-outline-light btn-social mx-1" href="#!">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-social mx-1" href="#!">
+                    <i class="fab fa-fw fa-twitter"></i>
+                </a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-social mx-1" href="#!">
+                    <i class="fab fa-fw fa-linkedin-in"></i></a>
+                <!-- Youtube -->
+                <a class="btn btn-outline-light btn-social mx-1" href="#!">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
             </div>
         </div>
     </footer>
@@ -214,8 +175,8 @@
     <div class="copyright py-4 text-center text-white">
         <div class="container"><small>Copyright &copy; danmcode 2022</small></div>
     </div>
-    
-    
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
