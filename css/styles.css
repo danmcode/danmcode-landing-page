@@ -5587,6 +5587,29 @@ html {
   }
 }
 
+.experience-container{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  place-items: center;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.experience-container img{
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.experience-divider{
+  border: 0.5px;
+  border-style: solid;
+  margin-right: 16px;
+  margin-left: 16px;
+  height: 100%;
+  border-color: lightgray;
+}
+
 @media (max-width: 640px){
   .about-container{
     display: flex;
@@ -5595,7 +5618,37 @@ html {
     padding-right: 20px;
     text-align: center;
   }
+
+  .experience-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .experience-container img{
+    margin-bottom: 20px;
+    width: 200px;
+  }
+
+  .experience-container p{
+    
+  }
+
+  .experience-divider{
+    border: 0.5px;
+    border-style: solid;
+    width: 100%;
+    border-color: lightgray;
+  }
+
+  .experience-container p{
+    margin-top: 12px;
+  }
 }
+
+
 
 .footer {
   padding-top: 5rem;
