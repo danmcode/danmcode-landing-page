@@ -5597,6 +5597,24 @@ html {
   }
 }
 
+.container-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 12px;
+}
+
+.languajes{
+
+}
+
+.data-bases{
+
+}
+
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
