@@ -1,0 +1,136 @@
+@media (min-width: 992px) {
+    .masthead {
+      padding-top: calc(6rem + 104px);
+      padding-bottom: 6rem;
+    }
+    .masthead .masthead-heading {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    .masthead .masthead-subheading {
+      font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .about-container{
+      display: flex;
+      flex-direction: column;
+      padding-left: 15%;
+      padding-right: 15%;
+      text-align: center;
+    }
+  
+    .experience-container{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  
+    .experience-container img{
+      margin-bottom: 20px;
+      width: 200px;
+    }
+
+    .experience-divider{
+      border: 0.5px;
+      border-style: solid;
+      width: 100%;
+      border-color: lightgray;
+    }
+  
+    .experience-container p{
+      margin-top: 12px;
+    }
+
+    /*Skills*/
+    .container-row{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skills-items{
+      margin-bottom: 12px;
+    }
+
+    .column-gallery {
+      width: 80%;
+    } 
+}
+
+@media (max-width: 880px){
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
+  }
+
+  .experience-container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .row-portafolio{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+.row-gallery,
+.row-gallery > .column-gallery {
+  margin-top: 12px;
+  padding: 0;
+}
+
+  .column-gallery {
+    width: 100%;
+  } 
+
+  .container-row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-items{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+

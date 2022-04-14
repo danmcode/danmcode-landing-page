@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap" rel="stylesheet">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/reponsive.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -48,13 +49,13 @@
                         </a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#habilites">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">
                             Habilidades
                         </a>
                     </li>
 
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="">Blog
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" target="blank" href="https://medium.com/@danmcode">Blog
                         </a>
                     </li>
                 </ul>
@@ -82,15 +83,17 @@
 
             <!-- Presentation -->
             <div class="about-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ratione natus sit doloremque neque
-                illum quidem, dignissimos corporis, laudantium maxime beatae molestias veniam dolores laboriosam
-                officia, accusantium sint. Quod, error!
+                ¡Me llamo Daniel Muelas, Si Muelas! Soy Tecnólogo en Gestión de Redes de Datos del SENA, actualmente
+                estoy cursando el último semestre de Ingeniería Informática, mi énfasis es el Desarrollo de Software, en
+                especial desarrollo móvil con Flutter y Kotlin, También hago backend, con PHP, NodeJs. siendo PHP y
+                Flutter los lenguajes con los que tengo mayor experiencia y trabajo actualmente.
             </div>
         </div>
     </header>
 
     <!-- experience danmcode-->
     <section class="page-section experience" id="experience">
+
         <div class="container">
             <!-- experience Me Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
@@ -112,10 +115,12 @@
                 <div class="experience-divider"></div>
                 <div>
                     <p>
-                    <h6>Propiedad de SEGURIDAD OMEGA LTDA</h6>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vel impedit minus, doloribus rem
-                    esse, inventore facilis aliquid quae repellat nostrum ratione deserunt, tempore aliquam culpa
-                    numquam. Consectetur, perferendis modi!
+                    <h6> SEGURIDAD OMEGA LTDA </h6>
+                    <p> En el año 2020, me encargué de dar soporte a equipos en sitio así como el soporte, mantenimiento e instalación del aplicativo web Protección en Línea. </p>
+                    <p>Desde el año 2021, me he encargado de todo el ciclo de vida de desarrollo de la aplicación móvil
+                        de Protección en Línea, software de la empresa SEGURIDAD OMEGA LTDA, que permite a los clientes
+                        de seguridad física estar al tanto de todo lo que sucede en la portería.</p>
+
                     </p>
                 </div>
             </div>
@@ -136,53 +141,245 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Portafolio Section Content-->
-            <div class="row">
+            <div class="row-portafolio">
+
+                <div id="myBtnContainer">
+                    <button class="btn-gallery active-gallery rounded" onclick="filterSelection('mobile')"> Aplicaciones
+                        Móviles</button>
+                    <button class="btn-gallery rounded" onclick="filterSelection('web')"> Aplicaciones Web</button>
+                    <button class="btn-gallery rounded" onclick="filterSelection('iot')"> IoT</button>
+                </div>
+
+                <!-- Portfolio Gallery Grid -->
+                <div class="row-gallery">
+
+                    <!-- Protección en Línea -->
+                    <div class="column-gallery mobile">
+                        <div class="content-portafolio">
+                            <iframe src="https://www.youtube.com/embed/eW0btem0yDw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="content-container">
+                                <h4>Protección en Línea</h4>
+                                <p>Aplicación desarrollada con Flutter para <a target="blanck" href="https://seguridadomega.com.co/">Seguridad Omega LTDA.</a>  
+                                    <ul>
+                                        <li> Desarrollo APIs con PHP </li>
+                                        <li> Diseño de interfaces </li>
+                                        <li> Manejo de estados con provider </li>
+                                        <li> Notificaciones PUSH </li>
+                                    </ul>
+                                    <a target="blanck" href="https://play.google.com/store/apps/details?id=seguridadomega.com.co.pel_app">PlayStore</a> &nbsp; <a target="blanck" href="https://apps.apple.com/co/app/protección-en-línea/id1563992828">AppStore</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Peliculas and Series App -->
+                    <div class="column-gallery mobile">
+                        <div class="content-portafolio">
+                            <iframe src="https://www.youtube.com/embed/eW0btem0yDw" 
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="content-container">
+                                <h4>Danmcode Show</h4>
+                                <p>
+                                    Aplicación desarrollada con Flutter para buscar películas y series.
+                                    <ul>
+                                        <li>Consumo de APIs públicas</li>
+                                        <li>Uso de manejadores de estado como Provider</li>
+                                        <li>Diseño de interfaces</li>
+                                        <li>Animaciones básicas</li>
+                                    </ul>
+                                    <a target="blank" href="https://github.com/danmcode/flutter-projects-course/tree/peliculas/peliculas">Repositorio en GitHub</a></li>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog App -->
+                    <div class="column-gallery web">
+                        <div class="content-portafolio">
+                            <iframe src="https://www.youtube.com/embed/223sYhYIwss" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="content-container">
+                                <h4>Danmcode Blog</h4>
+                                <p>
+                                    Blog desarrollado con PHP & Laravel
+
+                                    <ul>
+                                        <li> Seeders, Factories & Migrations </li>
+                                        <li> MySql -  Eloquent </li>
+                                        <li> Bootstrap </li>
+                                    </ul>
+
+                                    <a target="blank" href="https://github.com/danmcode/laravel-projects-course/tree/blog_project/dev-rivera-blog">Repositorio en GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IoT -->
+                    <div class="column-gallery iot">
+                        <div class="content-portafolio">
+                            <iframe src="https://www.youtube.com/embed/223sYhYIwss" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="content-container">
+                                <h4>Arduino Finger Print</h4>
+                                <p>
+                                    Prototipado de un Huellero dactilar para Seguridad Omega
+                                    <ul>
+                                        <li> NodeMcu & ESP8266 </li>
+                                        <li> Consumos de APIs con Arduino </li>
+                                        <li> Sockets NodeJs </li>
+                                        <li> Desarrollo de APIs con PHP </li>
+                                        <li> Integración de software </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END GRID -->
+                </div>
+                <!-- END MAIN -->
             </div>
+        </div>
         </div>
     </section>
 
     <!-- Languages danmcode-->
-    <section class="page-section habilites" id="habilites">
-        <div class="container">
-            <!-- experience Me Section Heading-->
+    <section class="page-section skills" id="skills">
+        <div class="container-skills">
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
                 Habilidades
             </h2>
+
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fa-solid fa-brain"></i></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Portfolio Grid Items-->
-            
-            <div class = "container-row">
-                <div class="languajes">
+
+            <div class="container-row">
+                <!-- backend -->
+                <div>
                     <h6> Desarrollo Backend </h6>
+
+                    <div class="skills-items">
+                        <div class="container-column">
+                            <img src="/assets/img/php.png" width="120"><br>
+                            <span>Desarrollo de aplicaciones web y APIs haciendo uso de PHP en especial con el
+                                Framework, Laravel.</span>
+                        </div>
+
+                        <div class="container-column">
+                            <img src="/assets/img/nodejs.png" width="108"><br>
+                            <span>
+                                Desarrollo backend con Node Js, Haciendo uso de sockets para la comunicación en
+                                tiempo real entre aplicaciones.</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="data-bases">
+                <!-- Databases -->
+                <div>
                     <h6> Bases de datos </h6>
+                    <div class="skills-items">
+                        <div class="container-column">
+                            <img src="/assets/img/Mongo.svg" width="150"><br>
+                            <span>Manejo de bases de datos NoSQL orientadas a documentos como MongoDB</span>
+                        </div>
+
+                        <div class="container-column">
+                            <img src="/assets/img/mysql-ar21.svg" width="130">
+                            <span>Diseño creación e integración de bases de datos relacionales, configuración de
+                                servicios MySql o MariaDB en entornos Linux.
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- Backend -->
 
-            <div class = "container-row">
-                <div class="web-dev">
+            <hr>
+
+            <!-- Web Dev -->
+            <div class="container-row">
+                <div>
                     <h6> Desarrollo Web </h6>
+                    <div class="skills-items">
+
+                        <div class="container-column">
+                            <img src="/assets/img/js.png" width="110"><br>
+                            <span>Conocimientos de Java Script para el manejo de Frameworks e interactividad básica en
+                                páginas web</span>
+                        </div>
+
+                        <div class="container-column">
+                            <img src="/assets/img/react.svg" width="128"><br>
+                            <span>
+                                Desarrollo FrontEnd de páginas web haciendo uso del Framework React.
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mobile-dev">
+                <div>
                     <h6> Desarrollo Movíl </h6>
+                    <div class="skills-items">
+                        <div class="container-column">
+                            <img src="./assets/img/flutter-lockup.png" width="140"><br>
+                            <span>
+                                Desarrollo Móvil multiplataforma Android/IOS haciendo uso de Flutter
+                            </span>
+                        </div>
+
+                        <div class="container-column">
+
+                            <img src="./assets/img/kotlin.svg" width="130"><br>
+                            <span>
+                                Desarrollo Nativo de aplicaciones móviles haciendo uso de Kotlin.
+                            </span>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class = "container-row">
-                <div class="extras-linux">
+            <hr>
+            <div class="container-row">
+                <div>
                     <h6> Linux </h6>
+                    <div class="skills-items">
+                        <img src="./assets/img/tux.png" width="120">
+                        <div>
+                            Me gusta mucho explorar y aprender de Sistemas Libres como Linux, he adquirido los
+                            conocimientos básicos para levantar servicios de RED, configurar entornos de desarrollo y
+                            hacer despliegues básicos de aplicaciones web en PHP y React.
+                        </div>
+                    </div>
                 </div>
 
-                <div class="extras-IoT">
+                <div>
                     <h6> IoT </h6>
+                    <div class="skills-items">
+                        <img src="./assets/img/arduino-logo.png" width="120">
+                        <div>
+                            Otro de mis gustos es prototipar e interactuar con los diferentes dispositivos y sensores
+                            compatibles con Arduino, aprendiendo un poco más conceptos de hardware.
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -198,23 +395,33 @@
                 <h4 class="text-uppercase mb-4">Redes sociales</h4>
 
                 <!-- Instragram -->
-                <a class="btn btn-outline-light btn-social mx-1" href="#!">
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                    href="https://www.instagram.com/danmcode/">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-social mx-1" href="#!">
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://twitter.com/danmcode">
                     <i class="fab fa-fw fa-twitter"></i>
                 </a>
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-social mx-1" href="#!">
-                    <i class="fab fa-fw fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                    href="https://www.linkedin.com/in/danmcode/">
+                    <i class="fab fa-fw fa-linkedin-in"></i>
+                </a>
                 <!-- Youtube -->
-                <a class="btn btn-outline-light btn-social mx-1" href="#!">
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                    href="https://www.youtube.com/channel/UCRncJ_A5GDMgqXV5N7lj6QA">
                     <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://github.com/danmcode">
+                    <i class="fa-brands fa-github"></i>
                 </a>
             </div>
         </div>
     </footer>
+
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
         <div class="container"><small>Copyright &copy; danmcode 2022</small></div>
@@ -225,7 +432,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
